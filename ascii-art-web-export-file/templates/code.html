@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title>Convertisseur ascii-art-web</title>
+  <link rel="stylesheet" href="css/code.css">
+
+
+
+</head>
+
+<body>
+<center>
+  
+
+<h1> Convertisseur Ascii-Art</h1>
+
+<h2 >Veuillez entrer un texte svp et choisir une police:</h2>
+
+
+
+<h3>
+<form id="" action="/ascii" method="post">
+  <label for="fichier1"></label><input type="radio" name="fichier" id="fichier1" value="shadow"> shadow<br>
+  <label for="fichier2"></label><input type="radio" name="fichier" id="fichier2" value="standard" checked> standard <br>
+  <label for="fichier3"></label><input type="radio" name="fichier" id="fichier3" value ="thinkertoy"> thinkertoy<br>
+
+<br>
+<br>
+<br>
+
+<p>Saisissez le texte a convertir :</p>
+<p>
+<textarea id ="textarea" name="formulaire" action="/ascii" method="POST"  rows="10" cols="50" placeholder="entrez texte :"></textarea>
+</p>
+<br>
+
+<input type="submit" value="valider">
+</h3>
+</form>
+<form  id = "" action="/Export" method="post">
+<button type = "submit" id="Export" value = "/Export" >Exporter</button>
+</form>
+<br>
+
+<br>
+
+<pre>{{.str}}{{.confirm}}</pre>
+</center>
+
+
+
+
+</body>
+</html>

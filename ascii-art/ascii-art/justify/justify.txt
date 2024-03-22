@@ -1,0 +1,20 @@
+algo of justify
+
+ascii_art_of("Hello The World")
+
+len_of_words = 13
+ // or
+non_spaces   = 13
+
+term_width   = 25
+free         = term_width - non_spaces
+             = 12
+
+free         = (term_width - length_of_text) + spaces_count
+             = 12
+
+padding      = free / spaces_count
+             = 12 / 2
+             = 6
+
+Hello      The      World|
